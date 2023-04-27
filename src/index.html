@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Get City Time</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>TravelBuddy.com</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Get City Time</h1>
-	<label for="city-input">Enter City:</label>
-	<input type="text" id="city-input">
-	<button id="get-time-btn">Get Time</button>
-	<div id="city-time"></div>
-	<script src="index.js"></script>
-</body>
-</html>
-
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Car Rentals</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Deals</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <a href="#"><img src="image.png" alt="TravelBuddy.com"></a>
+    </div>
+    <div class="searchbar" >
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Where are you going?">
+            <button type="submit">Search</button>
+          </form>
+    </div>
+  </header>
+  
+  <main>
+    <section class="banner">
+      <h1>Travel the world with Booking.com</h1>
+      <p>Find the perfect place to stay, from cozy apartments to luxury villas.</p>
+      <form action="#" method="get">
+        <input type="text" name="destination" placeholder="Where are you going?">
+        <input type="date" name="checkin">
+        <input type="date" name="checkout">
+        <input type="number" name="guests" placeholder="Number of guests">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    
+    <section class="popular-destinations">
+      <h2>Popular Destinations</h2>
+      <ul>
+       <div class="hawaii-section" >
+        <li><a href="#"><img src="" alt="Hawaii"><span>Hawaii</span></a></li>
+        <p></p>
+       </div>
+       <div class="paris-section" >
+        <li><a href="#"><img src="" alt="Paris"><span>Paris</span></a></li>
+        <p></p>
+       </div>
+       <div>
+        <li><a href="#"><img src="" alt="New York"><span>Australia</span></a></li>
+        <p></p>
+       </div>
+        
+        <li><a href="#"><img src="" alt="Tokyo"><span>Tokyo</span></a></li>
+        <li><a href="#"><img src="" alt="London"><span>London</span></a></li>
+        <li><a href="#"><img src="" alt="South Africa"><span>Sydney</span></a></li>
+        <li><a href="#"><img src="" alt="Sydney"><span>Kenya</span></a></li>
+      </ul>
+    </section>
+    
+    <section class="featured-hotels">
+      <h2>Featured Hotels</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="hotel-1.jpg" alt="Hotel 1">
+            <div class="hotel-info">
+              <h3>Hotel 1</h3>
+              <span class="price">$100/night</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="hotel-2.jpg" alt="Hotel 2">
+            <div class="hotel-info">
+              <h3>Hotel 2</h3>
+              <span class="price">$150/night</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <</ul>
+        </section>
+        
+        <section class="how-it-works">
+          <h2>How It Works</h2>
+          <ul>
+            <li><img src="search-icon.png" alt="Search icon"><span>Search for your ideal accommodation</span></li>
+            <li><img src="book-icon.png" alt="Book icon"><span>Book and confirm your reservation</span></li>
+            <li><img src="travel-icon.png" alt="Travel icon"><span>Travel and enjoy your stay!</span></li>
+          </ul>
+        </section>
+      </main>
+      
+      <footer>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </footer>
+    </body>
+    </html>
