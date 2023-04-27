@@ -1,0 +1,117 @@
+{
+    "destinations": [
+      {
+        "city": "Paris",
+        "country": "France",
+        "hotels": [
+          {
+            "name": "Four Seasons Hotel George V",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593364/four-seasons-hotel-george_scegbv.jpg"
+          },
+          {
+            "name": "Shangri-La Hotel, Paris",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593460/pcr9nykqskmkij1uecn9.jpg"
+          }
+        ]
+      },
+      {
+        "city": "New York City",
+        "country": "United States",
+        "hotels": [
+          {
+            "name": "The Plaza Hotel",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593519/ud6aexi7ndc7hod0gubj.jpg"
+          },
+          {
+            "name": "The Ritz-Carlton New York, Central Park",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593557/m9hgdktnysvbbqcvp1oa.jpg"
+          }
+        ]
+      },
+      {
+        "city": "Tokyo",
+        "country": "Japan",
+        "hotels": [
+          {
+            "name": "The Ritz-Carlton, Tokyo",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593598/dik6wnzdfab3zfeobbr9.jpg"
+          },
+          {
+            "name": "The Peninsula Tokyo",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593669/wck2bsrrx3z8prd1p1b2.jpg"
+          }
+        ]
+      },
+      {
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "hotels": [
+          {
+            "name": "Burj Al Arab Jumeirah",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593711/l7rnjznrqfcdxit2gd7o.jpg"
+          },
+          {
+            "name": "Jumeirah Emirates Towers",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593739/id8whnfy4rszuwj0ls24.jpg"
+          }
+        ]
+      },
+      {
+        "city": "Sydney",
+        "country": "Australia",
+        "hotels": [
+          {
+            "name": "The Langham, Sydney",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593818/y64ouccydl8ipqknzdeh.jpg"
+          },
+          {
+            "name": "The Park Hyatt Sydney",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682593868/fhj6qoeo9lht9nrccmdb.jpg"
+          }
+        ]
+      },
+      {
+        "city": "Rio de Janeiro",
+        "country": "Brazil",
+        "hotels": [
+          {
+            "name": "Belmond Copacabana Palace",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682595316/basif17eqa0qteinesmd.jpg"
+          },
+          {
+            "name": "Hotel Fasano Rio de Janeiro",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682595376/wnifgfuyhps4lllzbh5c.jpg"
+          }
+        ]
+      },
+      {
+        "city": "Barcelona",
+        "country": "Spain",
+        "hotels": [
+          {
+            "name": "Mandarin Oriental, Barcelona",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682595438/ty7swd4fkk2vfvug2zdu.jpg"
+          },
+          {
+            "name": "W Barcelona",
+            "rating": 5,
+            "img": "https://res.cloudinary.com/dc7psexsi/image/upload/v1682595503/mzrhba4bvzfff6m6mf0x.jpg"
+          }
+        ]
+      }
+    ]
+  }
+    
