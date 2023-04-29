@@ -1,79 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-  <title>TravelBuddy.com</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Hotels</a></li>
-        <li><a href="#">Flights</a></li>
-        <li><a href="#">Car Rentals</a></li>
-        <li><a href="#">Packages</a></li>
-        <li><a href="#">Deals</a></li>
-      </ul>
-    </nav>
-    <div class="logo">
-      <a href="#"><img src="image.png" alt="TravelBuddy.com"></a>
-    </div>
-    <div class="searchbar" >
-        <form action="#" method="get">
-            <input type="text" name="search" placeholder="Where are you going?">
-            <button type="submit">Search</button>
-          </form>
-    </div>
-  </header>
-  
-  <main>
-    <section class="banner">
-      <h1>Travel the world with Booking.com</h1>
-      <p>Find the perfect place to stay, from cozy apartments to luxury villas.</p>
-      <form action="#" method="get">
-        <input type="text" name="destination" placeholder="Where are you going?">
-        <input type="date" name="checkin">
-        <input type="date" name="checkout">
-        <input type="number" name="guests" placeholder="Number of guests">
-        <button type="submit">Search</button>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>IP Locator</title>
+  </head>
+  <body>
+    <header>
+      <div class="error">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
+          />
+        </svg>
+        <p class="error-text">This is an error</p>
+      </div>
+      <form>
+        <input type="text" id="search" placeholder="Enter your ip address" />
+        <button type="submit" class="search-btn">Search</button>
+        <button type="button" class="reset-btn">Reset</button>
       </form>
-    </section>
-    
-    <section class="popular-destinations">
-      <h2>Popular Destinations</h2>
-        <li><a href="#"><img src="https://res.cloudinary.com/dc7psexsi/image/upload/v1682593519/ud6aexi7ndc7hod0gubj.jpg" alt="New York"><span>New York</span></a></li>
-        <li><a href="#"><img src="https://res.cloudinary.com/dc7psexsi/image/upload/v1682593557/m9hgdktnysvbbqcvp1oa.jpg" alt="New York"><span>New York</span></a></li>
-        <li><a href="#"><img src="https://res.cloudinary.com/dc7psexsi/image/upload/v1682593364/four-seasons-hotel-george_scegbv.jpgz" alt="france"><span>France</span></a></li>
-        <li><a href="#"><img src="https://res.cloudinary.com/dc7psexsi/image/upload/v1682593460/pcr9nykqskmkij1uecn9.jpg" alt="france"><span>france</span></a></li>
-        <li><a href="#"><img src="" alt="South Africa"><span>tokyo</span></a></li>
-        <li><a href="#"><img src="" alt="Sydney"><span>tokyo</span></a></li>
-        <li><a href="#"><img src="" alt="New York"><span>uae</span></a></li>
-        <li><a href="#"><img src="" alt="New York"><span>uae</span></a></li>
-        <li><a href="#"><img src="" alt="New York"><span>Australia</span></a></li>
-        <li><a href="#"><img src="" alt="New York"><span>Australia</span></a></li>
-        <li><a href="#"><img src="" alt="New York"><span>Australia</span></a></li>
-    </section>
-      </main>
-      
-      <footer>
-        <div class="footer-links">
-          <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
+      <div class="details">
+        <div>
+          <p class="description">Ip Address</p>
+          <p class="value">8.8.8.8</p>
         </div>
-        <div class="social-media">
-          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <div>
+          <p class="description">ISP</p>
+          <p class="value">Safaricom Ltd</p>
         </div>
-      </footer>
-      <script src="index.js"  ></script>
-    </body>
-    </html>
+        <div>
+          <p class="description">Country</p>
+          <p class="value">SKenya</p>
+        </div>
+        <div>
+          <p class="description">City</p>
+          <p class="value">Nairobi</p>
+        </div>
+      </div>
+    </header>
+    <main id="map"></main>
+  </body>
+</html>
