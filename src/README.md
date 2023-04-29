@@ -1,4 +1,4 @@
-# IP LOCATOR # a project by Reagan Munene🧛🏾‍♀️
+# IP LOCATOR  a project by Reagan Munene🧛🏾‍♀️ #
 ## DESCRIPTION ##
 IP LOCATOR is a web app designed to display the location of a user accessing the website using Wi-Fi. It utilises [leaflet](https://leafletjs.com/reference.html), a public API, to show the user's location on a map.
 
