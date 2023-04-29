@@ -3,7 +3,12 @@ const errorDiv = document.querySelector('.error');
 const errorText = document.querySelector('.error-text');
 const input = document.querySelector('input');
 
-form.addEventListener('submit', e => {
+document.addEventListener('DOMContentLoaded', async () => {
+  const data = await httpHandler(false);
+  bindElements(data);
+});
+
+form.addEventListener('submit', async e => {
   e.preventDefault();
   const ipaddress = input.value;
 
@@ -12,19 +17,38 @@ form.addEventListener('submit', e => {
     return;
   }
 
-  console.log('first');
-  httpHandler(false);
+  const data = await httpHandler(true, ipaddress);
+  if (!data) {
+    return;
+  }
+  bindElements(data);
+  input.value = '';
 });
 
-function renderMap() {
-  var map = L.map('map').setView([51.505, -0.09], 13);
+document.querySelector('.reset-btn').addEventListener('click', async () => {
+  const data = await httpHandler(false);
+  bindElements(data);
+});
+
+function bindElements(data) {
+  document.querySelector('#ip-address').textContent = data.ip;
+  document.querySelector('#isp').textContent = data.connection.isp;
+  document.querySelector('#country').textContent = data.location.country.name;
+  document.querySelector('#city').textContent = data.location.city.name;
+  renderMap(data.location.latitude, data.location.longitude);
+}
+
+function renderMap(lat, lng) {
+  document.getElementById('map-container').innerHTML =
+    "<div id='map' style='width: 100%; height: 100%;'></div>";
+  var map = L.map('map').setView([lat, lng], 13);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution:
       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
-  var marker = L.marker([51.5, -0.09]).addTo(map);
-  var circle = L.circle([51.5, -0.09], {
+  var marker = L.marker([lat, lng]).addTo(map);
+  var circle = L.circle([lat, lng], {
     color: '#f87171',
     fillColor: '#fca5a5',
     fillOpacity: 0.5,
@@ -52,7 +76,9 @@ async function httpHandler(isSearch, ipaddress = '') {
 
   const response = await fetch(url);
   const { data } = await response.json();
+  if (!response.ok) {
+    displayError('The ip must be a valid IP address.');
+    return;
+  }
   return data;
 }
-
-renderMap();
